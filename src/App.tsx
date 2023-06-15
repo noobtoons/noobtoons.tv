@@ -23,6 +23,7 @@ import image9 from './static/image9.jpg';
 import image5 from './static/image5.jpg';
 import image14 from './static/image14.jpg';
 import image1 from './static/snow.jpg';
+import mail from './static/mail.png';
 
 import Navigation from './nav';
 import './App.css';
@@ -86,6 +87,7 @@ function App() {
           <div>
             <h1 className="name-title">Noobtoons</h1>
             <h3 className="skills">Gaming Content Creator | Influencer | Twitch Streamer | Gaming Consultant</h3>
+            <a className="mail" target="_blank" href="mailto:hello@noobtoons.tv"><img className="mail-icons" src={mail} alt="tiktok-link" /> hello@noobtoons.tv</a>
             <div>
               <a target="_blank" href="https://www.instagram.com/noobtoonstv">
                 <img className="main-icons" src={instagram} alt="instagram-link" />

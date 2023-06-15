@@ -94,6 +94,7 @@ h2 {
     text-decoration: underline;
     text-decoration-style: double;
     text-decoration-color: #7c7c7d;
+    -webkit-text-stroke: 1px #623f3c;
 }
 
 .sections {
@@ -162,6 +163,22 @@ footer {
 .main-icons {
     height: 80px;
     padding: 5px;
+}
+
+.mail-icons {
+    height: 28px;
+    margin: 0 10px;
+    align-self: center;
+}
+
+.mail {
+    font-size: .7em;
+    display: flow-root;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 3px 0;
+    align-self: center;
+    -webkit-text-stroke: 1px #623f3c;
 }
 
 .icons-brands {
@@ -266,5 +283,10 @@ form {
 
     .all-links-main {
         display: flow-root;
+    }
+
+    .mail {
+        font-size: 1em;
+        display: inline-flex;
     }
 }
