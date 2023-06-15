@@ -1,69 +1,64 @@
-import React, { useEffect } from 'react';
-import twitter from "./static/twitter-3.png";
-import twitch from "./static/twitch-3.png";
-import tiktok from "./static/tiktok-3.png";
-import youtube from "./static/youtube-3.png";
-import linkedin from "./static/linkedin-3.png";
-import instagram from "./static/instagram-13.png";
-import target from "./static/target-link.png";
-import bafta from "./static/bafta.png";
-import cooler from "./static/coolermaster.png";
-import hnm from "./static/H&M.png";
-import TwoK from "./static/2k.svg";
-import SquareEnix from "./static/SquareEnix.png";
-import womeninesports from "./static/womeninesports.png";
-import logitech from "./static/Logitech.png";
-import streamlabs from "./static/Streamlabs.png";
-import image2 from './static/image2.jpg';
-import background from './static/background.jpg';
-import image12 from './static/image12.jpg';
-import image6 from './static/image6.jpg';
-import image11 from './static/image11.jpg';
-import image9 from './static/image9.jpg';
-import image5 from './static/image5.jpg';
-import image14 from './static/image14.jpg';
-import image1 from './static/snow.jpg';
-
+import React, { useEffect, useRef, useState } from 'react';
+import Mailer from './mailer';
+// import axios from 'axios';
 import Navigation from './nav';
 import './App.css';
 import Carousel from './carousel';
 import { AddLibrary } from './thirdparty';
-
-const mailTo = async (e: any) => {
-  // @ts-ignore
-  const from_name = document.getElementById("name-content").value || "No Name";
-  // @ts-ignore
-  const message = document.getElementById("mail-content").value;
-  const email = "mailto:hello@noobtoons.tv";
-  try {
-    e.preventDefault();
-
-    if (message.length) {
-      await window.emailjs.send(
-        "service_7sd5x5o", "template_nibjan9",
-        { from_name, message },
-        "hTyF3BiMx61_mKf0Q"
-      );
-      alert("Message sent successfully!");
-
-    } else {
-      alert("Please Enter a message!");
-    }
-  } catch (e: any) {
-    alert(e);
-    console.log(e);
-  }
-
-};
+import {
+  background,
+  bafta,
+  cooler,
+  hnm,
+  image1,
+  image11,
+  image12,
+  image14,
+  image2,
+  image5,
+  image6,
+  image9,
+  instagram,
+  linkedin,
+  logitech,
+  mail,
+  SquareEnix,
+  streamlabs,
+  target,
+  tiktok,
+  twitch,
+  twitter,
+  TwoK,
+  womeninesports,
+  youtube
+} from './media';
 
 function App() {
+  const [sections, setSections] = useState([]);
+
   AddLibrary("https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js", "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q");
   AddLibrary("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js", "sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz");
+
+  // const getSetSections = async () => {
+  //   try {
+  //     const res = await axios.get('http://localhost:1993/');
+  //     setSections(res.data);
+  //   } catch (e) {
+  //     console.log(e);
+  //   }
+  // };
 
   useEffect(() => {
     window.emailjs.init('hTyF3BiMx61_mKf0Q');
   }, []);
 
+  // useEffect(() => {
+  //   getSetSections();
+  // }, []);
+
+  console.log(sections)
+
+  const filmRollRef = useRef(null);
   useEffect(() => {
     window.jQuery('.autoplay').not('.slick-initialized').slick({
       slidesToShow: 5,
@@ -76,7 +71,7 @@ function App() {
       autoplay: true,
       autoplaySpeed: 2000,
     });
-  }, []);
+  }, [filmRollRef]);
 
   return (
     <div className="App">
@@ -86,6 +81,8 @@ function App() {
           <div>
             <h1 className="name-title">Noobtoons</h1>
             <h3 className="skills">Gaming Content Creator | Influencer | Twitch Streamer | Gaming Consultant</h3>
+            <a className="mail" target="_blank" href="mailto:hello@noobtoons.tv"><img className="mail-icons" src={mail}
+                                                                                      alt="tiktok-link" /> hello@noobtoons.tv</a>
             <div>
               <a target="_blank" href="https://www.instagram.com/noobtoonstv">
                 <img className="main-icons" src={instagram} alt="instagram-link" />
@@ -177,12 +174,12 @@ function App() {
                   className="textarea form-control" id="mail-content">
                 </textarea>
                 </div>
-                <button id="email" type="submit" onClick={mailTo} className="btn btn-primary">Submit</button>
+                <button id="email" type="submit" onClick={Mailer} className="btn btn-primary">Submit</button>
               </div>
             </form>
           </div>
 
-          <footer id="socials" className="sections">
+          <div id="socials" className="sections footer">
             <h2>Socials:</h2>
             <a target="_blank" href="https://www.twitch.tv/noobtoons">
               <img className="icons" src={twitch} alt="twitch-link" />
@@ -205,9 +202,10 @@ function App() {
             <a target="_blank" className="all-links-main" href="http://https://www.beacons.ai/noobtoons"> All Links
               <img className="icons" src={target} alt="linkedin-link" />
             </a>
-          </footer>
+          </div>
+
         </div>
-        <div id="film_roll" className="autoplay">
+        <div id="film_roll" className="autoplay" ref={filmRollRef}>
           <a>
             <img className="d-block w-100" src={background} alt="Noobtoons birthday shoot 2023" />
           </a>
@@ -238,9 +236,38 @@ function App() {
         </div>
       </div>
 
+      <div id="timelines" className="sections">
+        <div className="twitter">
+          <a
+            className="twitter-timeline"
+            data-lang="en"
+            data-tweet-limit="1"
+            data-show-retweets={false}
+            href="https://twitter.com/noobtoonsTv?ref_src=twsrc%5Etfw">
+            Tweets by noobtoonsTv
+          </a>
+        </div>
+        <div className="tiktok">
+          <blockquote
+            className="tiktok-embed"
+            cite="https://www.tiktok.com/@noobtoonstv"
+            data-unique-id="noobtoonstv"
+            data-embed-from="oembed"
+            data-embed-type="creator">
+            <a target="_blank" href="https://www.tiktok.com/@noobtoonstv?refer=creator_embed">@noobtoonstv</a>
+          </blockquote>
+        </div>
+      </div>
+      
       <div id="showcase">
         <Carousel />
       </div>
+      <footer>
+      <a className="mail mail-bottom" target="_blank" href="mailto:hello@noobtoons.tv">
+        <img className="mail-icons" src={mail} alt="tiktok-link" />
+        hello@noobtoons.tv
+      </a>
+    </footer>
     </div>
   );
 }
