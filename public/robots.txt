@@ -1,4 +1,5 @@
 # https://www.robotstxt.org/robotstxt.html
+# https://www.seoptimer.com/robots-txt-generator
 User-agent: *
 Sitemap: http://www.noobtoons.tv/sitemap.xml
 Disallow:
