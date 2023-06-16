@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # noobtoons-hompage
 =======
 # Getting Started with Create React App

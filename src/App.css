@@ -1,5 +1,6 @@
 .App {
     text-align: center;
+    overflow: hidden;
 }
 
 #about > div > a {
@@ -18,6 +19,10 @@
 #about > div > p {
     margin: 0 !important;
     color: initial;
+}
+
+blockquote {
+    margin: 0 !important;
 }
 
 .audience {
@@ -90,10 +95,25 @@ h2 {
     font-family: 'Ultra', serif !important;
 }
 
+#timelines {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.tiktok, .twitter {
+    width: 90%;
+    height: 100%;
+    align-self: center;
+    justify-self: center;
+}
+
 .sections > h2 {
     text-decoration: underline;
     text-decoration-style: double;
     text-decoration-color: #7c7c7d;
+    -webkit-text-stroke: 1px #623f3c;
 }
 
 .sections {
@@ -113,13 +133,15 @@ h2 {
 
 .para-about > p > a {
     font-family: inherit;
+    font-weight: bold;
 }
 
 #film_roll {
     justify-content: center;
     display: inline-flex;
-    height: 50vh;
+    height: 92vh;
     width: 15vw;
+    overflow: hidden;
 }
 
 .sectioned {
@@ -150,7 +172,7 @@ h2 {
 
 }
 
-footer {
+.footer {
     display: inline-flex;
 }
 
@@ -162,6 +184,22 @@ footer {
 .main-icons {
     height: 80px;
     padding: 5px;
+}
+
+.mail-icons {
+    height: 28px;
+    margin: 0 10px;
+    align-self: center;
+}
+
+.mail {
+    font-size: .7em;
+    display: flow-root;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 3px 0;
+    align-self: center;
+    -webkit-text-stroke: 1px #a3a6a8;
 }
 
 .icons-brands {
@@ -256,15 +294,34 @@ form {
         font-size: 2em;
     }
 
-    #film_roll, .autoplay, div[class^="slick"] {
+    #film_roll, .autoplay, div[class^="slick"], .mail-bottom {
         display: none !important;
     }
 
-    footer {
+    .footer {
         display: block;
     }
 
     .all-links-main {
         display: flow-root;
+    }
+
+    .mail {
+        font-size: 1em;
+        display: inline-flex;
+    }
+
+    #timelines {
+        grid-template-columns: 1fr;
+    }
+
+    .mail-bottom {
+        display: initial !important;
+    }
+
+    .App-header{
+        min-height: 62vh;
+        background-repeat-y: no-repeat;
+        background-size: cover;
     }
 }
