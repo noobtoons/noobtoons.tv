@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Mailer from './mailer';
-// import axios from 'axios';
 import Navigation from './nav';
 import './App.css';
 import Carousel from './carousel';
@@ -34,11 +33,7 @@ import {
 } from './media';
 
 function App() {
-  const [sections, setSections] = useState([]);
-
-  AddLibrary("https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js", "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q");
-  AddLibrary("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js", "sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz");
-
+  // const [sections, setSections] = useState([]);
   // const getSetSections = async () => {
   //   try {
   //     const res = await axios.get('http://localhost:1993/');
@@ -47,17 +42,14 @@ function App() {
   //     console.log(e);
   //   }
   // };
-
-  useEffect(() => {
-    window.emailjs.init('hTyF3BiMx61_mKf0Q');
-  }, []);
-
   // useEffect(() => {
   //   getSetSections();
   // }, []);
-
-  console.log(sections)
-
+  
+  useEffect(() => {
+    window.emailjs.init('hTyF3BiMx61_mKf0Q');
+  });
+  
   const filmRollRef = useRef(null);
   useEffect(() => {
     window.jQuery('.autoplay').not('.slick-initialized').slick({
