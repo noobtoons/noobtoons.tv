@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Noobtoons",
+  "name": "Website for Noobtoons, a UK content creator on Twitch and Tiktok",
   "icons": [
     {
       "src": "favicon.ico",
