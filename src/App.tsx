@@ -3,7 +3,6 @@ import Mailer from './mailer';
 import Navigation from './nav';
 import './App.css';
 import Carousel from './carousel';
-import { AddLibrary } from './thirdparty';
 import {
   background,
   bafta,
@@ -45,11 +44,11 @@ function App() {
   // useEffect(() => {
   //   getSetSections();
   // }, []);
-  
+
   useEffect(() => {
     window.emailjs.init('hTyF3BiMx61_mKf0Q');
   });
-  
+
   const filmRollRef = useRef(null);
   useEffect(() => {
     window.jQuery('.autoplay').not('.slick-initialized').slick({
@@ -248,7 +247,7 @@ function App() {
           </blockquote>
         </div>
       </div>
-      
+
       <div id="showcase">
         <Carousel />
       </div>
