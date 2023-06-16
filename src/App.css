@@ -318,4 +318,10 @@ form {
     .mail-bottom {
         display: initial !important;
     }
+
+    .App-header{
+        min-height: 62vh;
+        background-repeat-y: no-repeat;
+        background-size: cover;
+    }
 }

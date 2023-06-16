@@ -104,41 +104,39 @@ function App() {
             <h2>About</h2>
             <div className="para-about">
               <p>
-                Noobtoon is a black, queer variety streamer and Content Creator from the United Kingdom who focuseon
+                Noobtoons is a black, queer variety streamer and Content Creator from the United Kingdom who focuses on
                 mostly competatitve gameplay
-                by finding new wayto make a well loved title just a little bit more challenging. She also doenot shy
+                by finding new ways to make a well loved title just a little bit more challenging. She also does not shy
                 away for a nice cozy session after a challenging playthrough.
               </p>
               <p>
-                Noobtoonforsteran inclusive and safe space and community that iwelcoming to everyone be it on
-                Twitch,
-                Tiktok or Youtube.
-                <strong>The Noob Troop</strong> athe community iknown, show up for the cozy vibe of Noobtoons' live
+                All while forstering an inclusive and safe space for her community that is welcoming to everyone be it
+                on
+                Twitch, Tiktok or Youtube.
+                <strong>The Noob Troop</strong> as the community is known, show up for the cozy vibe of Noobtoons' live
                 streams, for each other and
                 particularly to watch her react to random content on the internet, of which they get a massive kick out
                 of.
               </p>
               <p>
-                Noobtoonalso helpto highlight important issuefaced by marginalised creatoraa collective where
-                necessary
-                and
-                having an open and honest conversation with her community by creating engaging scenariowhich encourages
-                everyone to get involved be it on Twitch and/or other platforms.
+                Noobtoons also helps to highlight important issues faced by marginalised creators where
+                necessary and loves having an open and honest conversation with her community by creating engaging
+                scenarios
+                which encourages everyone to get involved be it on Twitch and/or other platforms.
               </p>
               <p>
-                Noobtoonia patrnered Twicth Streamer and haworked with a number of well known <a href="#brands">brands
-                affiliations</a> in her
-                short time aa creator
-                and ialwaylooking to partner with companieon activations/ sponsorshipthat align with her and her
-                growing audienceintereston any platform.
+                Noobtoons is a patrnered Twicth Streamer and has a part of a number of well known <a href="#brands">brand
+                affiliations</a> in her short time as a creator
+                and is always looking to partner with companies on activations/ sponsorships that align with her and her
+                growing audiences' interests.
               </p>
               <p>
-                Although Noobtoons' main audience ion Twitch, she actively createcontent for other <a
-                target="_blank" href="http://https://www.beacons.ai/noobtoons">platform<img className="audience"
-                                                                                            src={target}
-                                                                                            alt="linkedin-link" />
-              </a> and haa growing following on a lot of the other
-                social mediawhich showcasewhat she iabout.
+                Although Noobtoons' main audience is on Twitch, she actively creates content for other <a
+                target="_blank" href="http://https://www.beacons.ai/noobtoons">platforms<img className="audience"
+                                                                                             src={target}
+                                                                                             alt="linkedin-link" />
+              </a> and has a lot of growing following on a lot of the other
+                social medias which showcases what shes about.
               </p>
 
             </div>
