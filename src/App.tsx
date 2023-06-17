@@ -123,7 +123,7 @@ function App() {
               </p>
               <p>
                 Although Noobtoons' main audience is on Twitch, she actively creates content for other <a
-                target="_blank" href="http://https://www.beacons.ai/noobtoons">platforms<img className="audience"
+                target="_blank" href="https://www.beacons.ai/noobtoons">platforms<img className="audience"
                                                                                              src={target}
                                                                                              alt="linkedin-link" />
               </a> and has a lot of growing following on a lot of the other
@@ -155,7 +155,7 @@ function App() {
             <form>
               <div className="form-column">
                 <div className="col">
-                  <input type="text" id="name-content" className="form-control" placeholder="Name" />
+                  <input type="text" id="name-content" className="form-control" placeholder="Contact Email" />
                 </div>
                 <div className="col">
                 <textarea
