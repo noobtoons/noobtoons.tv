@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5f08567a.css",
+    "main.js": "/static/js/main.d2acf531.js",
+    "static/js/787.13b33c06.chunk.js": "/static/js/787.13b33c06.chunk.js",
+    "static/media/image5.jpg": "/static/media/image5.0a868845fd4e9df15c35.jpg",
+    "static/media/image10.jpg": "/static/media/image10.610adfd2baea6762df6b.jpg",
+    "static/media/snow.jpg": "/static/media/snow.5f4f42f4601196d37dc9.jpg",
+    "static/media/image11.jpg": "/static/media/image11.4c8de1a20a4464b82e3a.jpg",
+    "static/media/background.jpg": "/static/media/background.4ff0f013538e66a22c1b.jpg",
+    "static/media/image2.jpg": "/static/media/image2.3c9dae91312162ee9da4.jpg",
+    "static/media/image12.jpg": "/static/media/image12.45bfb930af8f22a0d02e.jpg",
+    "static/media/image6.jpg": "/static/media/image6.79abbb22c59c9162552f.jpg",
+    "static/media/image3.jpg": "/static/media/image3.358a476ca00085ef51ea.jpg",
+    "static/media/image4.jpg": "/static/media/image4.a6af969cc93326ad3fbb.jpg",
+    "static/media/image9.jpg": "/static/media/image9.9bbd07aa8d7f6913327b.jpg",
+    "static/media/image8.jpg": "/static/media/image8.6c6045bf881acd5cb2d9.jpg",
+    "static/media/image1.jpg": "/static/media/image1.982c1780e54e7aea207d.jpg",
+    "static/media/image7.jpg": "/static/media/image7.761970baf3e12bd8d214.jpg",
+    "static/media/image14.jpg": "/static/media/image14.19385002e57d83a5552a.jpg",
+    "static/media/image0.jpg": "/static/media/image0.2e6fd1bdf9a5ddfe17a6.jpg",
+    "static/media/coolermaster.png": "/static/media/coolermaster.4d703224b5295fa9a110.png",
+    "static/media/image13.jpg": "/static/media/image13.17d15ae6746ea92953bb.jpg",
+    "static/media/instagram-13.png": "/static/media/instagram-13.1506b398fa46f19bb324.png",
+    "static/media/Logitech.png": "/static/media/Logitech.beca785aefc7a8a3e9d7.png",
+    "static/media/H&M.png": "/static/media/H&M.4fabb513730e4ab93d4d.png",
+    "static/media/bafta.png": "/static/media/bafta.9f7871750391fcbca10f.png",
+    "static/media/SquareEnix.png": "/static/media/SquareEnix.6ceb2f5b6d20f9d466dd.png",
+    "static/media/Streamlabs.png": "/static/media/Streamlabs.360311dcbef6bf514c78.png",
+    "static/media/mail.png": "/static/media/mail.8889bd9460b06e6ad9d9.png",
+    "static/media/womeninesports.png": "/static/media/womeninesports.64ce1bf0c6f14982f1bb.png",
+    "index.html": "/index.html",
+    "static/media/2k.svg": "/static/media/2k.d9d3d1aa4bca6afed8e475c7bc57125e.svg",
+    "main.5f08567a.css.map": "/static/css/main.5f08567a.css.map",
+    "main.d2acf531.js.map": "/static/js/main.d2acf531.js.map",
+    "787.13b33c06.chunk.js.map": "/static/js/787.13b33c06.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5f08567a.css",
+    "static/js/main.d2acf531.js"
+  ]
+}

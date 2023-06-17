@@ -1,0 +1,18 @@
+/* TEAM */
+Developer: Noobtoons Yenca
+contact: hello@noobtoons.tv
+Twitter: @noobtoonstv
+Location: London, United Kingdom
+
+[...]
+
+/* THANKS */
+Name: Noobtoons @ twitch.tv/noobtoons
+[...]
+
+/* SITE */
+
+Last update: 2023/06/16
+Standards: HTML5, CSS3,javascript, typescript..
+Components: React,Nodejs.
+Software: MEAN Stack
