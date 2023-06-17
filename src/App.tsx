@@ -96,12 +96,12 @@ function App() {
             <div className="para-about">
               <p>
                 Noobtoons is a black, queer variety streamer and Content Creator from the United Kingdom who focuses on
-                mostly competatitve gameplay
+                mostly competitive gameplay
                 by finding new ways to make a well loved title just a little bit more challenging. She also does not shy
-                away for a nice cozy session after a challenging playthrough.
+                away for a nice cozy session after a challenging play-through.
               </p>
               <p>
-                All while forstering an inclusive and safe space for her community that is welcoming to everyone be it
+                All while fostering an inclusive and safe space for her community that is welcoming to everyone be it
                 on
                 Twitch, Tiktok or Youtube.
                 <strong>The Noob Troop</strong> as the community is known, show up for the cozy vibe of Noobtoons' live

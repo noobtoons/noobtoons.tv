@@ -46,5 +46,5 @@ $ git tag <tagname> -a
 $ git push origin --tags
 ````
 #TODO 
-    - SSL 5years: https://secure.configuressl.com/comodo/dv
-
+   - SSL [5 years](https://secure.configuressl.com/comodo/dv)
+   - RSS Feed
