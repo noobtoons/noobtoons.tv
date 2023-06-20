@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Mailer from './mailer';
 import SEOKeys from './SEOkeys';
 import Navigation from './nav';
@@ -31,23 +31,11 @@ import {
   womeninesports,
   youtube
 } from './media';
+import { emailJSKey } from './vars/constantValues';
 
 function App() {
-  // const [sections, setSections] = useState([]);
-  // const getSetSections = async () => {
-  //   try {
-  //     const res = await axios.get('http://localhost:1993/');
-  //     setSections(res.data);
-  //   } catch (e) {
-  //     console.log(e);
-  //   }
-  // };
-  // useEffect(() => {
-  //   getSetSections();
-  // }, []);
-
   useEffect(() => {
-    window.emailjs.init('hTyF3BiMx61_mKf0Q');
+    window.emailjs.init(emailJSKey);
   });
 
   const filmRollRef = useRef(null);
@@ -170,7 +158,7 @@ function App() {
           </div>
 
           <div id="socials" className="sections footer">
-            <h2>Socials:</h2>
+            <h2>Socials</h2>
             <a target="_blank" href="https://www.twitch.tv/noobtoons">
               <img className="icons" src={twitch} alt="twitch-link" />
             </a>

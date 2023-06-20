@@ -3,7 +3,6 @@ const mailer = async (e: any) => {
   const from_name = document.getElementById("name-content").value || "No Name";
   // @ts-ignore
   const message = document.getElementById("mail-content").value;
-  const email = "mailto:hello@noobtoons.tv";
   try {
     e.preventDefault();
 
@@ -14,7 +13,9 @@ const mailer = async (e: any) => {
         "hTyF3BiMx61_mKf0Q"
       );
       alert("Message sent successfully!");
-
+//TODO
+      // from_name.length && document.getElementById("name-content")?.value = "";
+      // message.length && document.getElementById("mail-content")?.value = "";
     } else {
       alert("Please Enter a message!");
     }
@@ -24,4 +25,4 @@ const mailer = async (e: any) => {
   }
 };
 
-export default mailer; 
+export default mailer;

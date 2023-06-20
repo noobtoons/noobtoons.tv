@@ -47,5 +47,4 @@ $ git push origin --tags
 ````
 #TODO 
    - SSL [5 years](https://secure.configuressl.com/comodo/dv)
-   - RSS Feed
    - Serve images from bucket?
