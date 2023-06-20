@@ -1,5 +1,5 @@
 {
-  "name": "noobtoons-hompage",
+  "name": "noobtoons.tv",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -26,6 +26,9 @@
     "predeploy": "npm run build",
     "betterAudit": "better-npm-audit audit --production"
   },
+  "pre-push": [
+    "betterAudit"
+  ],
   "eslintConfig": {
     "extends": [
       "react-app",

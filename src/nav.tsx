@@ -2,7 +2,6 @@ import target from "./static/target-link.png";
 
 export default function Navigation() {
   return(
-    <>
     <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,6 +30,5 @@ export default function Navigation() {
         </ul>
       </div>
     </nav>
-      </>
     )
 }
