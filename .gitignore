@@ -154,3 +154,4 @@ yarn-debug.log*
 yarn-error.log*
 noobtoons-hompage.iml
 /.idea/
+/src/vars/cipher.js
