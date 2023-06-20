@@ -136,6 +136,10 @@ h2 {
     font-weight: bold;
 }
 
+.keys {
+    font-size: 0;
+}
+
 #film_roll {
     justify-content: center;
     display: inline-flex;
@@ -319,7 +323,7 @@ form {
         display: initial !important;
     }
 
-    .App-header{
+    .App-header {
         min-height: 62vh;
         background-repeat-y: no-repeat;
         background-size: cover;

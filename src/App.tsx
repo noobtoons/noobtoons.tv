@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Mailer from './mailer';
+import SEOKeys from './SEOkeys';
 import Navigation from './nav';
 import './App.css';
 import Carousel from './carousel';
@@ -124,8 +125,8 @@ function App() {
               <p>
                 Although Noobtoons' main audience is on Twitch, she actively creates content for other <a
                 target="_blank" href="https://www.beacons.ai/noobtoons">platforms<img className="audience"
-                                                                                             src={target}
-                                                                                             alt="linkedin-link" />
+                                                                                      src={target}
+                                                                                      alt="linkedin-link" />
               </a> and has a lot of growing following on a lot of the other
                 social medias which showcases what shes about.
               </p>
@@ -226,6 +227,7 @@ function App() {
       </div>
 
       <div id="timelines" className="sections">
+        <SEOKeys />
         <div className="twitter">
           <a
             className="twitter-timeline"
@@ -252,11 +254,11 @@ function App() {
         <Carousel />
       </div>
       <footer>
-      <a className="mail mail-bottom" target="_blank" href="mailto:hello@noobtoons.tv">
-        <img className="mail-icons" src={mail} alt="tiktok-link" />
-        hello@noobtoons.tv
-      </a>
-    </footer>
+        <a className="mail mail-bottom" target="_blank" href="mailto:hello@noobtoons.tv">
+          <img className="mail-icons" src={mail} alt="tiktok-link" />
+          hello@noobtoons.tv
+        </a>
+      </footer>
     </div>
   );
 }
