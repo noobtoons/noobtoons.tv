@@ -1,20 +1,23 @@
+import React from "react";
 export default function SEOKeys() {
   return (
     <>
-      <span className="keys">Twitch streamer</span>
-      <span className="keys">Black Twitch streamer</span>
-      <span className="keys">Gamer Girl</span>
-      <span className="keys">Girl Gsmer</span>
-      <span className="keys">hot gamer girls</span>
-      <span className="keys">Amouranth</span>
-      <span className="keys">Asmondgold</span>
-      <span className="keys">popular twitch streamers</span>
-      <span className="keys">Kick streamers</span>
-      <span className="keys">Final Fantasy xvi</span>
-      <span className="keys">Final Fantasy</span>
-      <span className="keys">GTA V</span>
-      <span className="keys">Grand Theft Auto V</span>
-      <span className="keys">Twitch Con</span>
+      <h1 className="keys">Twitch streamer</h1>
+      <h1 className="keys">Black Twitch streamer</h1>
+      <h1 className="keys">Black Girl Gamer</h1>
+      <h1 className="keys">Gamer Girl</h1>
+      <h1 className="keys">Black Gamer Girl</h1>
+      <h1 className="keys">Girl Gamer</h1>
+      <h1 className="keys">hot gamer girls</h1>
+      <h1 className="keys">popular twitch streamers</h1>
+      <h1 className="keys">Kick streamers</h1>
+      <h1 className="keys">Final Fantasy xvi</h1>
+      <h1 className="keys">Final Fantasy</h1>
+      <h1 className="keys">GTA V</h1>
+      <h1 className="keys">Grand Theft Auto V</h1>
+      <h1 className="keys">Twitch Con</h1>
+      <h1 className="keys">Black Twitch Streamers</h1>
+      <h1 className="keys">Black Twitch Streamers to Follow</h1>
     </>
-  )
+  );
 }
