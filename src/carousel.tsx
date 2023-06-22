@@ -1,3 +1,4 @@
+import React from "react";
 import {
   image0,
   image1,
@@ -7,23 +8,31 @@ import {
   image8,
   image9,
   image10,
-  image13
-} from './media'
+  image13,
+} from "./media";
 
 export default function Carousel() {
   return (
-    <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
+    <div
+      id="carouselExampleAutoplaying"
+      className="carousel slide"
+      data-bs-ride="carousel"
+    >
       <div className="carousel-inner">
         <div className="carousel-item active">
           <img className="d-block w-100" src={image1} alt="First slide" />
           <div className="carousel-caption d-md-block">
-            <p className="caption">Street Fighter 6 Capcom PR Event - Red Bull Gaming Sphere</p>
+            <p className="caption">
+              Street Fighter 6 Capcom PR Event - Red Bull Gaming Sphere
+            </p>
           </div>
         </div>
         <div className="carousel-item">
           <img className="d-block w-100" src={image0} alt="First slide" />
           <div className="carousel-caption d-md-block">
-            <p className="caption">League of Legends Riot Games PR Event - Red Bull Gaming Sphere</p>
+            <p className="caption">
+              League of Legends Riot Games PR Event - Red Bull Gaming Sphere
+            </p>
           </div>
         </div>
         <div className="carousel-item">
@@ -70,16 +79,24 @@ export default function Carousel() {
         </div>
       </div>
 
-      <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-              data-bs-slide="prev">
+      <button
+        className="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
         <span className="visually-hidden">Previous</span>
       </button>
-      <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-              data-bs-slide="next">
+      <button
+        className="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
         <span className="carousel-control-next-icon" aria-hidden="true"></span>
         <span className="visually-hidden">Next</span>
       </button>
     </div>
-  )
+  );
 }
