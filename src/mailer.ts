@@ -1,12 +1,13 @@
-import { emailJSKey } from './vars/constantValues';
+import { emailJSKey } from "./vars/constantValues";
 
 const mailer = async (e: any) => {
   // @ts-ignore
-  const from_name = (<HTMLInputElement>document.getElementById(
-    "name-content")).value || "No Name";
+  const from_name =
+    (document.getElementById("name-content") as HTMLInputElement).value ||
+    "No Name";
   // @ts-ignore
-  const message = (<HTMLInputElement>document.getElementById(
-    "mail-content")).value;
+  const message = (document.getElementById("mail-content") as HTMLInputElement)
+    .value;
   try {
     e.preventDefault();
 
