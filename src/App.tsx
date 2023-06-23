@@ -1,22 +1,14 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import Mailer from "./mailer";
+import FilmRoll from "./filmRoll";
 import SEOKeys from "./SEOkeys";
 import Navigation from "./nav";
 import "./App.css";
 import Carousel from "./carousel";
 import {
-  background,
   bafta,
   cooler,
   hnm,
-  image1,
-  image11,
-  image12,
-  image14,
-  image2,
-  image5,
-  image6,
-  image9,
   instagram,
   linkedin,
   logitech,
@@ -38,21 +30,6 @@ function App() {
     window.emailjs.init(emailJSKey);
   });
 
-  const filmRollRef = useRef(null);
-  useEffect(() => {
-    window.jQuery(".autoplay").not(".slick-initialized").slick({
-      slidesToShow: 5,
-      slidesToScroll: 1,
-      dots: true,
-      focusOnSelect: true,
-      vertical: true,
-      arrows: false,
-      infinite: true,
-      autoplay: true,
-      autoplaySpeed: 2000,
-    });
-  }, [filmRollRef]);
-
   return (
     <div className="App">
       <Navigation />
@@ -67,19 +44,25 @@ function App() {
             <a
               className="mail"
               target="_blank"
-              href="mailto:hello@noobtoons.tv"
               rel="noreferrer"
+              href="mailto:hello@noobtoons.tv"
             >
-              <img className="mail-icons" src={mail} alt="tiktok-link" />{" "}
+              <img
+                loading="lazy"
+                className="mail-icons"
+                src={mail}
+                alt="tiktok-link"
+              />{" "}
               hello@noobtoons.tv
             </a>
             <div>
               <a
                 target="_blank"
-                href="https://www.instagram.com/noobtoonstv"
                 rel="noreferrer"
+                href="https://www.instagram.com/noobtoonstv"
               >
                 <img
+                  loading="lazy"
                   className="main-icons"
                   src={instagram}
                   alt="instagram-link"
@@ -87,17 +70,27 @@ function App() {
               </a>
               <a
                 target="_blank"
-                href="https://www.tiktok.com/@noobtoonstv"
                 rel="noreferrer"
+                href="https://www.tiktok.com/@noobtoonstv"
               >
-                <img className="main-icons" src={tiktok} alt="tiktok-link" />
+                <img
+                  loading="lazy"
+                  className="main-icons"
+                  src={tiktok}
+                  alt="tiktok-link"
+                />
               </a>
               <a
                 target="_blank"
-                href="https://www.twitter.com/noobtoonstv"
                 rel="noreferrer"
+                href="https://www.twitter.com/noobtoonstv"
               >
-                <img className="main-icons" src={twitter} alt="twitter-link" />
+                <img
+                  loading="lazy"
+                  className="main-icons"
+                  src={twitter}
+                  alt="twitter-link"
+                />
               </a>
             </div>
           </div>
@@ -121,9 +114,9 @@ function App() {
                 community that is welcoming to everyone be it on Twitch, Tiktok
                 or Youtube.
                 <strong>The Noob Troop</strong> as the community is known, show
-                up for the cozy vibe of Noobtoons&apos; live streams, for each
-                other and particularly to watch her react to random content on
-                the internet, of which they get a massive kick out of.
+                up for the cozy vibe of Noobtoons live streams, for each other
+                and particularly to watch her react to random content on the
+                internet, of which they get a massive kick out of.
               </p>
               <p>
                 Noobtoons also helps to highlight important issues faced by
@@ -133,7 +126,7 @@ function App() {
                 Twitch and/or other platforms.
               </p>
               <p>
-                Noobtoons is a partnered ✓ Twitch Streamer and has a part of a
+                Noobtoons is a patrnered Twicth Streamer and has a part of a
                 number of well known <a href="#brands">brand affiliations</a> in
                 her short time as a creator and is always looking to partner
                 with companies on activations/ sponsorships that align with her
@@ -144,11 +137,16 @@ function App() {
                 actively creates content for other{" "}
                 <a
                   target="_blank"
-                  href="https://www.beacons.ai/noobtoons"
                   rel="noreferrer"
+                  href="https://www.beacons.ai/noobtoons"
                 >
                   platforms
-                  <img className="audience" src={target} alt="linkedin-link" />
+                  <img
+                    loading="lazy"
+                    className="audience"
+                    src={target}
+                    alt="linkedin-link"
+                  />
                 </a>{" "}
                 and has a lot of growing following on a lot of the other social
                 medias which showcases what shes about.
@@ -159,47 +157,56 @@ function App() {
           <div id="brands" className="sections">
             <h2 className="sections">Brands I&apos;ve Worked with</h2>
             <img
+              loading="lazy"
               className="icons-brands"
               src={twitch}
               alt="noobtoons partnered with twitch for pride month"
             />
             <img
+              loading="lazy"
               className="icons-brands"
               src={bafta}
               alt="noobtoons partnered with bafta games for nominee games"
             />
             <img
+              loading="lazy"
               className="icons-brands"
               src={cooler}
               alt="noobtoons partnered with coolermaster for sponsorships"
             />
             <img
+              loading="lazy"
               className="icons-brands"
               src={hnm}
-              alt="noobtoons partnered with h&m for
-              activations in animal crossing"
+              alt="noobtoons partnered with h&m for activations
+              in animal crossing"
             />
             <img
+              loading="lazy"
               className="icons-brands"
               src={TwoK}
               alt="noobtoons partnered with 2K for womens history month"
             />
             <img
+              loading="lazy"
               className="icons-brands"
               src={SquareEnix}
               alt="noobtoons partnered with Square Enix for activations"
             />
             <img
+              loading="lazy"
               className="icons-brands"
               src={womeninesports}
               alt="noobtoons partnered with women in esports for castings"
             />
             <img
+              loading="lazy"
               className="icons-brands"
               src={logitech}
               alt="noobtoons partnered with logitech for black history month"
             />
             <img
+              loading="lazy"
               className="icons-brands"
               src={streamlabs}
               alt="noobtoons partnered with streamlabs for black history month"
@@ -241,108 +248,98 @@ function App() {
             <h2>Socials</h2>
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://www.twitch.tv/noobtoons"
-              rel="noreferrer"
             >
-              <img className="icons" src={twitch} alt="twitch-link" />
+              <img
+                loading="lazy"
+                className="icons"
+                src={twitch}
+                alt="twitch-link"
+              />
             </a>
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://www.instagram.com/noobtoonstv"
-              rel="noreferrer"
             >
-              <img className="icons" src={instagram} alt="instagram-link" />
+              <img
+                loading="lazy"
+                className="icons"
+                src={instagram}
+                alt="instagram-link"
+              />
             </a>
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://www.tiktok.com/@noobtoonstv"
-              rel="noreferrer"
             >
-              <img className="icons" src={tiktok} alt="tiktok-link" />
+              <img
+                loading="lazy"
+                className="icons"
+                src={tiktok}
+                alt="tiktok-link"
+              />
             </a>
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://www.twitter.com/noobtoonstv"
-              rel="noreferrer"
             >
-              <img className="icons" src={twitter} alt="twitter-link" />
+              <img
+                loading="lazy"
+                className="icons"
+                src={twitter}
+                alt="twitter-link"
+              />
             </a>
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://www.youtube.com/@noobtoons"
-              rel="noreferrer"
             >
-              <img className="icons" src={youtube} alt="youtube-link" />
+              <img
+                loading="lazy"
+                className="icons"
+                src={youtube}
+                alt="youtube-link"
+              />
             </a>
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://www.linkedin.com/noobtoons"
-              rel="noreferrer"
             >
-              <img className="icons" src={linkedin} alt="linkedin-link" />
+              <img
+                loading="lazy"
+                className="icons"
+                src={linkedin}
+                alt="linkedin-link"
+              />
             </a>
             <a
               target="_blank"
+              rel="noreferrer"
               className="all-links-main"
               href="http://https://www.beacons.ai/noobtoons"
-              rel="noreferrer"
             >
               {" "}
               All Links
-              <img className="icons" src={target} alt="linkedin-link" />
+              <img
+                loading="lazy"
+                className="icons"
+                src={target}
+                alt="linkedin-link"
+              />
             </a>
           </div>
         </div>
-        <div id="film_roll" className="autoplay" ref={filmRollRef}>
-          <img
-            className="d-block w-100"
-            src={background}
-            alt="Noobtoons birthday shoot 2023"
-          />
-          <img
-            className="d-block w-100"
-            src={image2}
-            alt="Noobtoons in red hair"
-          />
-          <img
-            className="d-block w-100"
-            src={image12}
-            alt="Noobtoons Pride makeup"
-          />
-          <img
-            className="d-block w-100"
-            src={image6}
-            alt="Noobtoons Pride look"
-          />
-          <img
-            className="d-block w-100"
-            src={image11}
-            alt="Noobtoons peace sign"
-          />
-          <img
-            className="d-block w-100"
-            src={image9}
-            alt="Noobtoons Twitch and Tiktok Stream setup"
-          />
-          <img
-            className="d-block w-100"
-            src={image14}
-            alt="Noobtoons and Sharese"
-          />
-          <img
-            className="d-block w-100"
-            src={image5}
-            alt="Noobtoons at the Tate Morden"
-          />
-          <img
-            className="d-block w-100"
-            src={image1}
-            alt="Noobtoons dog Snow - Bichon Frise"
-          />
-        </div>
+        <FilmRoll />
       </div>
 
       <div id="timelines" className="sections">
+        <SEOKeys />
         <div className="twitter">
           <a
             className="twitter-timeline"
@@ -364,8 +361,8 @@ function App() {
           >
             <a
               target="_blank"
-              href="https://www.tiktok.com/@noobtoonstv?refer=creator_embed"
               rel="noreferrer"
+              href="https://www.tiktok.com/@noobtoonstv?refer=creator_embed"
             >
               @noobtoonstv
             </a>
@@ -380,10 +377,15 @@ function App() {
         <a
           className="mail mail-bottom"
           target="_blank"
-          href="mailto:hello@noobtoons.tv"
           rel="noreferrer"
+          href="mailto:hello@noobtoons.tv"
         >
-          <img className="mail-icons" src={mail} alt="tiktok-link" />
+          <img
+            loading="lazy"
+            className="mail-icons"
+            src={mail}
+            alt="tiktok-link"
+          />
           hello@noobtoons.tv
         </a>
         <SEOKeys />

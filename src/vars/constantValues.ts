@@ -1,5 +1,6 @@
-import CryptoJS from 'crypto-js';
-const emailStuff = "U2FsdGVkX1+jIbQEokCrHwjk7sqcdwVjqEIqSFofiIhmbKz3+97eMIdtQM1pIUdq";
+import CryptoJS from "crypto-js";
+const emailStuff =
+  "U2FsdGVkX1+jIbQEokCrHwjk7sqcdwVjqEIqSFofiIhmbKz3+97eMIdtQM1pIUdq";
 
 const decryptWithAES = (ciphertext: string) => {
   const phrase = "Email Stuff";
