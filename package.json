@@ -24,16 +24,38 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "betterAudit": "better-npm-audit audit --production"
+    "betterAudit": "better-npm-audit audit --production",
+    "pretty": "prettier --write 'src'",
+    "lint": "eslint src"
   },
   "pre-push": [
     "betterAudit"
   ],
   "eslintConfig": {
+    "plugins": [
+      "babel",
+      "react"
+    ],
+    "parser": "@typescript-eslint/parser",
     "extends": [
       "react-app",
-      "react-app/jest"
-    ]
+      "react-app/jest",
+      "prettier",
+      "eslint-config-prettier",
+      "eslint:recommended",
+      "plugin:react/recommended"
+    ],
+    "rules": {
+      "no-console": 0,
+      "no-unused-vars": 1,
+      "max-len": [
+        "error",
+        {
+          "comments": 80,
+          "code": 80
+        }
+      ]
+    }
   },
   "browserslist": {
     "production": [
@@ -50,6 +72,10 @@
   "devDependencies": {
     "@types/crypto-js": "^4.1.1",
     "better-npm-audit": "^3.7.3",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-prettier": "^0.0.0-empty",
+    "prettier": "^2.8.8",
     "react-scripts": "^5.0.1",
     "serve": "^14.2.0"
   }

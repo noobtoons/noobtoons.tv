@@ -1,0 +1,12 @@
+# Android/IntelliJ
+#
+docs/
+.idea
+.gradle
+local.properties
+*.iml
+
+# node.js
+#
+node_modules/
+/src/vars/cipher.ts
