@@ -1,22 +1,14 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import Mailer from "./mailer";
+import FilmRoll from "./filmRoll";
 import SEOKeys from "./SEOkeys";
 import Navigation from "./nav";
 import "./App.css";
 import Carousel from "./carousel";
 import {
-  background,
   bafta,
   cooler,
   hnm,
-  image1,
-  image11,
-  image12,
-  image14,
-  image2,
-  image5,
-  image6,
-  image9,
   instagram,
   linkedin,
   logitech,
@@ -38,21 +30,6 @@ function App() {
     window.emailjs.init(emailJSKey);
   });
 
-  const filmRollRef = useRef(null);
-  useEffect(() => {
-    window.jQuery(".autoplay").not(".slick-initialized").slick({
-      slidesToShow: 5,
-      slidesToScroll: 1,
-      dots: true,
-      focusOnSelect: true,
-      vertical: true,
-      arrows: false,
-      infinite: true,
-      autoplay: true,
-      autoplaySpeed: 2000,
-    });
-  }, [filmRollRef]);
-
   return (
     <div className="App">
       <Navigation />
@@ -66,7 +43,8 @@ function App() {
             </h3>
             <a
               className="mail"
-              target="_blank" rel="noreferrer"
+              target="_blank"
+              rel="noreferrer"
               href="mailto:hello@noobtoons.tv"
             >
               <img
@@ -78,9 +56,10 @@ function App() {
               hello@noobtoons.tv
             </a>
             <div>
-              <a target="_blank"
-                 rel="noreferrer"
-                 href="https://www.instagram.com/noobtoonstv"
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.instagram.com/noobtoonstv"
               >
                 <img
                   loading="lazy"
@@ -89,9 +68,10 @@ function App() {
                   alt="instagram-link"
                 />
               </a>
-              <a target="_blank"
-                 rel="noreferrer"
-                 href="https://www.tiktok.com/@noobtoonstv"
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.tiktok.com/@noobtoonstv"
               >
                 <img
                   loading="lazy"
@@ -100,9 +80,10 @@ function App() {
                   alt="tiktok-link"
                 />
               </a>
-              <a target="_blank"
-                 rel="noreferrer"
-                 href="https://www.twitter.com/noobtoonstv"
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.twitter.com/noobtoonstv"
               >
                 <img
                   loading="lazy"
@@ -154,9 +135,10 @@ function App() {
               <p>
                 Although Noobtoons&apos; main audience is on Twitch, she
                 actively creates content for other{" "}
-                <a target="_blank"
-                   rel="noreferrer"
-                   href="https://www.beacons.ai/noobtoons"
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.beacons.ai/noobtoons"
                 >
                   platforms
                   <img
@@ -264,9 +246,10 @@ function App() {
 
           <div id="socials" className="sections footer">
             <h2>Socials</h2>
-            <a target="_blank"
-               rel="noreferrer"
-               href="https://www.twitch.tv/noobtoons"
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.twitch.tv/noobtoons"
             >
               <img
                 loading="lazy"
@@ -275,9 +258,10 @@ function App() {
                 alt="twitch-link"
               />
             </a>
-            <a target="_blank"
-               rel="noreferrer"
-               href="https://www.instagram.com/noobtoonstv"
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.instagram.com/noobtoonstv"
             >
               <img
                 loading="lazy"
@@ -286,9 +270,10 @@ function App() {
                 alt="instagram-link"
               />
             </a>
-            <a target="_blank"
-               rel="noreferrer"
-               href="https://www.tiktok.com/@noobtoonstv"
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.tiktok.com/@noobtoonstv"
             >
               <img
                 loading="lazy"
@@ -297,9 +282,10 @@ function App() {
                 alt="tiktok-link"
               />
             </a>
-            <a target="_blank"
-               rel="noreferrer"
-               href="https://www.twitter.com/noobtoonstv"
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.twitter.com/noobtoonstv"
             >
               <img
                 loading="lazy"
@@ -308,9 +294,10 @@ function App() {
                 alt="twitter-link"
               />
             </a>
-            <a target="_blank"
-               rel="noreferrer"
-               href="https://www.youtube.com/@noobtoons"
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.youtube.com/@noobtoons"
             >
               <img
                 loading="lazy"
@@ -319,9 +306,10 @@ function App() {
                 alt="youtube-link"
               />
             </a>
-            <a target="_blank"
-               rel="noreferrer"
-               href="https://www.linkedin.com/noobtoons"
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/noobtoons"
             >
               <img
                 loading="lazy"
@@ -331,7 +319,8 @@ function App() {
               />
             </a>
             <a
-              target="_blank" rel="noreferrer"
+              target="_blank"
+              rel="noreferrer"
               className="all-links-main"
               href="http://https://www.beacons.ai/noobtoons"
             >
@@ -346,62 +335,7 @@ function App() {
             </a>
           </div>
         </div>
-        <div id="film_roll" className="autoplay" ref={filmRollRef}>
-          <img
-            loading="lazy"
-            className="d-block w-100"
-            src={background}
-            alt="Noobtoons birthday shoot 2023"
-          />
-          <img
-            loading="lazy"
-            className="d-block w-100"
-            src={image2}
-            alt="Noobtoons in red hair"
-          />
-          <img
-            loading="lazy"
-            className="d-block w-100"
-            src={image12}
-            alt="Noobtoons Pride makeup"
-          />
-          <img
-            loading="lazy"
-            className="d-block w-100"
-            src={image6}
-            alt="Noobtoons Pride look"
-          />
-          <img
-            loading="lazy"
-            className="d-block w-100"
-            src={image11}
-            alt="Noobtoons peace sign"
-          />
-          <img
-            loading="lazy"
-            className="d-block w-100"
-            src={image9}
-            alt="Noobtoons Twitch and Tiktok Stream setup"
-          />
-          <img
-            loading="lazy"
-            className="d-block w-100"
-            src={image14}
-            alt="Noobtoons and Sharese"
-          />
-          <img
-            loading="lazy"
-            className="d-block w-100"
-            src={image5}
-            alt="Noobtoons at the Tate Morden"
-          />
-          <img
-            loading="lazy"
-            className="d-block w-100"
-            src={image1}
-            alt="Noobtoons dog Snow - Bichon Frise"
-          />
-        </div>
+        <FilmRoll />
       </div>
 
       <div id="timelines" className="sections">
@@ -426,7 +360,8 @@ function App() {
             data-embed-type="creator"
           >
             <a
-              target="_blank" rel="noreferrer"
+              target="_blank"
+              rel="noreferrer"
               href="https://www.tiktok.com/@noobtoonstv?refer=creator_embed"
             >
               @noobtoonstv
@@ -441,7 +376,8 @@ function App() {
       <footer>
         <a
           className="mail mail-bottom"
-          target="_blank" rel="noreferrer"
+          target="_blank"
+          rel="noreferrer"
           href="mailto:hello@noobtoons.tv"
         >
           <img

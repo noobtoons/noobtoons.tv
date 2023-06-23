@@ -46,5 +46,5 @@ $ git tag <tagname> -a
 $ git push origin --tags
 ````
 #TODO 
-   - SSL [5 years](https://secure.configuressl.com/comodo/dv)
-   - Serve images from bucket?
+   - Serve images from bucket? - Serve Images in Next-Gen Formats
+   - Write Tests
