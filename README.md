@@ -46,5 +46,5 @@ $ git tag <tagname> -a
 $ git push origin --tags
 ````
 #TODO 
-   - Serve images from bucket? - Serve Images in Next-Gen Formats
+   - Serve images from a bucket? - Serve Images in Next-Gen Formats
    - Write Tests

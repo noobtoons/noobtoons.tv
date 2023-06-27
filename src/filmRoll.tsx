@@ -1,17 +1,7 @@
 import React, { useEffect, useRef } from "react";
-import {
-  background,
-  image1,
-  image11,
-  image12,
-  image14,
-  image2,
-  image5,
-  image6,
-  image9,
-} from "./media";
 
 export default function FilmRoll() {
+  const files = 'https://drive.google.com/uc?id=';
   const filmRollRef = useRef(null);
 
   useEffect(() => {
@@ -33,7 +23,7 @@ export default function FilmRoll() {
       <img
         loading="lazy"
         className="d-block w-100"
-        src={background}
+        src={`${files}1FTzSILBm6L8y-QJn0aQZDMUe3dVUzWGF`}
         alt="Noobtoons birthday shoot 2023"
       />
       {/*@ts-ignore*/}
@@ -49,49 +39,49 @@ export default function FilmRoll() {
       <img
         loading="lazy"
         className="d-block w-100"
-        src={image2}
+        src={`${files}somVtq_ZRNtoETFxiqNOnUMtbQfu--KG`}
         alt="Noobtoons in red hair"
       />
       <img
         loading="lazy"
         className="d-block w-100"
-        src={image12}
+        src={`${files}1JXAB-KQySrY_KCNbM41X3ucpsCeEJHjp`}
         alt="Noobtoons Pride makeup"
       />
       <img
         loading="lazy"
         className="d-block w-100"
-        src={image6}
+        src={`${files}1RAXFituozfjXscXHUjIJWsYELgDH9GiU`}
         alt="Noobtoons Pride look"
       />
       <img
         loading="lazy"
         className="d-block w-100"
-        src={image11}
+        src={`${files}1Ofxit25Dlf8nZzzaMWxmG3Im2alU4qKD`}
         alt="Noobtoons peace sign"
       />
       <img
         loading="lazy"
         className="d-block w-100"
-        src={image9}
+        src={`${files}1Hs7YuuoHASeHdWHCmaOUmwjmPu9pd9MY`}
         alt="Noobtoons Twitch and Tiktok Stream setup"
       />
       <img
         loading="lazy"
         className="d-block w-100"
-        src={image14}
+        src={`${files}1AD3x70bRyV-5OK4TJGs6zvGlyYGAadpT`}
         alt="Noobtoons and Sharese"
       />
       <img
         loading="lazy"
         className="d-block w-100"
-        src={image5}
+        src={`${files}1XBKTK5cFIrUNowuVYHWAuoYYQbGmEO8o`}
         alt="Noobtoons at the Tate Morden"
       />
       <img
         loading="lazy"
         className="d-block w-100"
-        src={image1}
+        src={`${files}1HV4x5OP6fHpKBQZQbsNfulXE14McNUOT`}
         alt="Noobtoons dog Snow - Bichon Frise"
       />
     </div>
