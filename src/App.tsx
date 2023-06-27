@@ -29,7 +29,6 @@ function App() {
   useEffect(() => {
     window.emailjs.init(emailJSKey);
   });
-const files = "https://drive.google.com/file/d/";
 
   return (
     <div className="App">
