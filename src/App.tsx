@@ -126,7 +126,7 @@ function App() {
                 Twitch and/or other platforms.
               </p>
               <p>
-                Noobtoons is a patrnered Twicth Streamer and has a part of a
+                Noobtoons is a partnered Twitch Streamer and has a part of a
                 number of well known <a href="#brands">brand affiliations</a> in
                 her short time as a creator and is always looking to partner
                 with companies on activations/ sponsorships that align with her
