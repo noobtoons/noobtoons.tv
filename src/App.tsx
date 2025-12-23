@@ -4,7 +4,7 @@ import FilmRoll from "./filmRoll";
 import SEOKeys from "./SEOkeys";
 import Navigation from "./nav";
 import "./App.css";
-import Carousel from "./carousel";
+// import Carousel from "./carousel";
 import {
   bafta,
   cooler,
@@ -18,7 +18,7 @@ import {
   target,
   tiktok,
   twitch,
-  twitter,
+  discord,
   TwoK,
   womeninesports,
   youtube,
@@ -83,13 +83,13 @@ function App() {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://www.twitter.com/noobtoonstv"
+                href="https://discord.gg/Ch8X7s2m8n"
               >
                 <img
                   loading="lazy"
-                  className="main-icons"
-                  src={twitter}
-                  alt="twitter-link"
+                  className="main-icons discord-icon"
+                  src={discord}
+                  alt="discord-link"
                 />
               </a>
             </div>
@@ -285,13 +285,13 @@ function App() {
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://www.twitter.com/noobtoonstv"
+              href="https://discord.gg/Ch8X7s2m8n"
             >
               <img
                 loading="lazy"
-                className="icons"
-                src={twitter}
-                alt="twitter-link"
+                className="icons bottom-discord-icon"
+                src={discord}
+                alt="discord-link"
               />
             </a>
             <a
@@ -328,7 +328,7 @@ function App() {
               All Links
               <img
                 loading="lazy"
-                className="icons"
+                className="icons target-icon"
                 src={target}
                 alt="linkedin-link"
               />
@@ -340,51 +340,39 @@ function App() {
 
       <div id="timelines" className="sections">
         <SEOKeys />
-        <div className="twitter">
-          <a
-            className="twitter-timeline"
-            data-lang="en"
-            data-tweet-limit="1"
-            data-show-retweets={false}
-            href="https://twitter.com/noobtoonsTv?ref_src=twsrc%5Etfw"
-          >
-            Tweets by noobtoonsTv
-          </a>
-        </div>
         <div className="tiktok">
-          <blockquote
-            className="tiktok-embed"
-            cite="https://www.tiktok.com/@noobtoonstv"
-            data-unique-id="noobtoonstv"
-            data-embed-from="oembed"
-            data-embed-type="creator"
-          >
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.tiktok.com/@noobtoonstv?refer=creator_embed"
-            >
-              @noobtoonstv
-            </a>
+          <blockquote className="tiktok-embed"
+                      data-unique-id="noobtoonstv"
+                      data-embed-from="embed_page"
+                      data-embed-type="creator"
+                      style={{maxWidth: '780px', minWidth: '288px'}}
+                      >
+            <section>
+              <a target="_blank"
+                 rel="noreferrer"
+                 href="https://www.tiktok.com/@noobtoonstv?refer=creator_embed">
+                @noobtoonstv
+              </a>
+            </section>
           </blockquote>
         </div>
       </div>
 
       <div id="showcase">
-        <Carousel />
+        {/*<Carousel/>*/}
       </div>
       <footer>
         <a
-          className="mail mail-bottom"
-          target="_blank"
-          rel="noreferrer"
-          href="mailto:hello@noobtoons.tv"
+            className="mail mail-bottom"
+            target="_blank"
+            rel="noreferrer"
+            href="mailto:hello@noobtoons.tv"
         >
           <img
-            loading="lazy"
-            className="mail-icons"
-            src={mail}
-            alt="tiktok-link"
+              loading="lazy"
+              className="mail-icons"
+              src={mail}
+              alt="tiktok-link"
           />
           hello@noobtoons.tv
         </a>

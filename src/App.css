@@ -36,7 +36,7 @@ li.nav-item:nth-child(5) {
 
 .navbar,
 a {
-  font-family: "Ultra", serif;
+  font-family: "Zilla Slab", serif;
 }
 
 .navbar-light .navbar-nav .active > .nav-link {
@@ -44,10 +44,11 @@ a {
 }
 
 .skills {
-  color: #623f3c;
+  color: wheat;
   font-size: 25px;
-  font-family: "Ultra", serif;
-  text-shadow: 1px 2px 3px #d39e00;
+  font-family: "Zilla Slab", serif;
+  font-weight: bolder;
+  text-shadow: 1px 2px 3px #8c2336;
   width: 90vw;
   justify-content: center;
   display: inline-flex;
@@ -60,7 +61,7 @@ a {
 
 .name-title {
   font-family: "Monoton", cursive;
-  font-size: 16vmin;
+  font-size: 13vmin;
   color: darkslategray;
   background-image: radial-gradient(
     circle,
@@ -72,7 +73,7 @@ a {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px #623f3c;
+  -webkit-text-stroke: 1px #d5948f;
 }
 
 #mail-content {
@@ -100,29 +101,24 @@ a {
 }
 
 h2 {
-  font-family: "Ultra", serif !important;
+  font-family: "Zilla Slab", serif;
+  font-weight: bolder;
 }
 
 #timelines {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  border-left: 1px solid gray;
-  border-right: 1px solid gray;
+  display: flex;
+  justify-content: center;
 }
 
-.tiktok,
-.twitter {
+.tiktok {
+  display: contents;
   width: 90%;
   height: 100%;
-  align-self: center;
-  justify-self: center;
 }
 
 .sections > h2 {
-  text-decoration: underline;
-  text-decoration-style: double;
   text-decoration-color: #7c7c7d;
-  -webkit-text-stroke: 1px #623f3c;
+  -webkit-text-stroke: 1px #d5948f;
 }
 
 .sections {
@@ -134,6 +130,7 @@ h2 {
 .sections > a {
   text-decoration-line: none;
   margin-left: 6px;
+  align-content: center;
 }
 
 .para-about {
@@ -178,15 +175,25 @@ h2 {
 }
 
 .all-links > img {
-  height: 30px;
+  height: 26px;
 }
 
 .all-links > img :hover {
   color: #0056b3;
 }
 
+.all-links-main {
+  font-size: 21px;
+  font-weight: bolder;
+}
+
+.all-links-main > img {
+  height: 26px !important;
+}
+
 .footer {
   display: inline-flex;
+  margin-top: 30px;
 }
 
 .icons {
@@ -199,20 +206,32 @@ h2 {
   padding: 5px;
 }
 
+.discord-icon {
+  height: 119px;
+  margin: -33px;
+}
+
+.bottom-discord-icon {
+  height: 57px;
+  margin: -20px;
+}
+
 .mail-icons {
-  height: 28px;
+  height: 35px;
   margin: 0 10px;
   align-self: center;
 }
 
 .mail {
-  font-size: 0.7em;
-  display: flow-root;
+  font-size: 1.2em;
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding: 3px 0;
-  align-self: center;
-  -webkit-text-stroke: 1px #a3a6a8;
+  font-weight: bolder;
+  -webkit-text-stroke: 1px #001320;
+  color: white;
+  text-shadow: 1px 2px 3px #ff123d;
 }
 
 .icons-brands {
@@ -233,6 +252,7 @@ h2 {
 .carousel {
   display: inline-flex;
   justify-content: center;
+  width: 50%;
 }
 
 .caption {
@@ -268,7 +288,7 @@ h2 {
 }
 
 .App-header > div {
-  margin-top: 15vh;
+  margin-top: 45vh;
 }
 
 .App-header {
@@ -279,8 +299,9 @@ h2 {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  background-size: contain;
-  background-image: url("https://drive.google.com/uc?id=1FTzSILBm6L8y-QJn0aQZDMUe3dVUzWGF");
+  background-size: cover;
+  background-position: center;
+  background-image: url("static/background.jpg");
 }
 
 form {
@@ -291,11 +312,19 @@ form {
   overflow-x: auto;
 }
 
+.para-about {
+  text-align: left;
+}
+
 .App-link {
   color: #61dafb;
 }
 
 @media only screen and (max-width: 36em) {
+  .App-header {
+    /*background-size: contain !important;*/
+  }
+
   .name-title {
     font-size: 3em;
   }
@@ -341,4 +370,13 @@ form {
     background-repeat-y: no-repeat;
     background-size: cover;
   }
+}
+
+
+.slick-dotted.slick-slider {
+  margin-bottom: unset;
+}
+
+.slick-list.draggable {
+  height: unset !important;
 }

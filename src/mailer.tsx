@@ -7,6 +7,7 @@ const mailer = async (e: any) => {
     e.preventDefault();
 
     if (message.length) {
+      // @ts-ignore
       await window.emailjs.send(
         "service_7sd5x5o",
         "template_nibjan9",
@@ -23,7 +24,7 @@ const mailer = async (e: any) => {
       alert("Please Enter a message!");
     }
   } catch (e: any) {
-    alert(e);
+    alert(...e);
     console.log(e);
   }
 };
