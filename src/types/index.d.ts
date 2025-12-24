@@ -8,6 +8,9 @@ declare global {
     bootstrap: () => void;
     Email: any;
     jQuery: any;
-    emailjs: any;
+    emailjs: {
+      send: any;
+      init: any;
+    };
   }
 }

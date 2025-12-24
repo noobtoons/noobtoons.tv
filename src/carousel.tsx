@@ -1,7 +1,17 @@
-import React from "react";
+import React from 'react';
+import {
+  image0,
+  image1,
+  image10,
+  image13,
+  image3,
+  image4,
+  image7,
+  image8,
+  image9
+} from './media';
 
 export default function Carousel() {
-  const files = "https://drive.google.com/uc?id=";
   return (
     <div
       id="carouselExampleAutoplaying"
@@ -12,12 +22,12 @@ export default function Carousel() {
         <div className="carousel-item active">
           <picture>
             <source
-              srcSet={`${files}12Zy_s9SahclNmcfUHZIJDpwoUWTycIH1`}
+              srcSet={image1}
               type="image/webp"
             />
           <img
             className="d-block w-100"
-            src={`${files}1HV4x5OP6fHpKBQZQbsNfulXE14McNUOT`}
+            src={image1}
             alt="First slide"
           />
           </picture>
@@ -30,12 +40,12 @@ export default function Carousel() {
         <div className="carousel-item">
           <picture>
             <source
-              srcSet={`${files}1es6GE8XQqAZqAy-eeCF5zdIKebgVPT3X`}
+              srcSet={image0}
               type="image/webp"
             />
           <img
             className="d-block w-100"
-            src={`${files}18PNPy0Oyv17NRNYU5uv5n3WHu2hWu1RH`}
+            src={image0}
             alt="First slide"
           />
           </picture>
@@ -48,12 +58,12 @@ export default function Carousel() {
         <div className="carousel-item">
           <picture>
             <source
-              srcSet={`${files}1wdUNRu4_abjDrz2pEc9U5xYSWekYPNn-`}
+              srcSet={image3}
               type="image/webp"
             />
           <img
             className="d-block w-100"
-            src={`${files}1-Yr2QdifOPVI1BpPZYgbTpK5CFJXOAls`}
+            src={image3}
             alt="Third slide"
           />
           </picture>
@@ -64,12 +74,12 @@ export default function Carousel() {
         <div className="carousel-item">
           <picture>
             <source
-              srcSet={`${files}14Vh3I27ZaOTpAEqib-qHMrj4EvLGLym-`}
+              srcSet={image4}
               type="image/webp"
             />
           <img
             className="d-block w-100"
-            src={`${files}1dRNiM8HRTS5p6b78LXe-l_pbyrUCtXhG`}
+            src={image4}
             alt="Fourth slide"
           />
           </picture>
@@ -80,12 +90,12 @@ export default function Carousel() {
         <div className="carousel-item">
           <picture>
             <source
-              srcSet={`${files}1xBduAAXXmqTvXEpOgPxsVVk0XirZpjK5`}
+              srcSet={image7}
               type="image/webp"
             />
           <img
             className="d-block w-100"
-            src={`${files}1WYO2r84wr-sRZv0_0CHuJ98Fp4ofmblI`}
+            src={image7}
             alt="Seventh slide"
           />
           </picture>
@@ -96,12 +106,12 @@ export default function Carousel() {
         <div className="carousel-item">
           <picture>
             <source
-              srcSet={`${files}1QZaMcIlUPyA1-oesy3-syAJ1YhBGc72u`}
+              srcSet={image8}
               type="image/webp"
             />
           <img
             className="d-block w-100"
-            src={`${files}19TZtaEvzI5BfaTIjdJQ1w0qg2Lwry-Ib`}
+            src={image8}
             alt="Eighth slide"
           />
           </picture>
@@ -112,12 +122,12 @@ export default function Carousel() {
         <div className="carousel-item">
           <picture>
             <source
-              srcSet={`${files}1_ZDOXS6W-tgcimZ3U_Xxhu_mohIn5oLk`}
+              srcSet={image9}
               type="image/webp"
             />
           <img
             className="d-block w-100"
-            src={`${files}1Hs7YuuoHASeHdWHCmaOUmwjmPu9pd9MY`}
+            src={image9}
             alt="Ninth slide"
           />
           </picture>
@@ -128,12 +138,12 @@ export default function Carousel() {
         <div className="carousel-item">
           <picture>
             <source
-              srcSet={`${files}1es6GE8XQqAZqAy-eeCF5zdIKebgVPT3X`}
+              srcSet={image10}
               type="image/webp"
             />
           <img
             className="d-block w-100"
-            src={`${files}1Rp-njn_ONbszLR5azg9fC2V2Nby5ej5h`}
+            src={image10}
             alt="Tenth slide"
           />
           </picture>
@@ -144,12 +154,12 @@ export default function Carousel() {
         <div className="carousel-item">
           <picture>
             <source
-              srcSet={`${files}1m6E4gf-PkycnMz_bhj4CHuCmA2wfN2pc`}
+              srcSet={image13}
               type="image/webp"
             />
           <img
             className="d-block w-100"
-            src={`${files}1hlam3hErj48ZOKF9K1fNyac7YYYP-rBv`}
+            src={image13}
             alt="Thirteenth slide"
           />
           </picture>

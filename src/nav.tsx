@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 // @ts-ignore
-import target from "./static/target-link.png";
+import target from './static/target-link.png';
 
 export default function Navigation() {
   return (
@@ -46,7 +46,7 @@ export default function Navigation() {
               href="http://www.beacons.ai/noobtoons"
               rel="noreferrer"
             >
-              {" "}
+              {' '}
               All Links
               <img className="icons" src={target} alt="linkedin-link" />
             </a>
