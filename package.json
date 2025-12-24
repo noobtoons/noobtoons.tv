@@ -1,6 +1,6 @@
 {
   "name": "noobtoons.tv",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "dependencies": {
@@ -42,8 +42,14 @@
     "rules": {
       "no-console": 0,
       "no-unused-vars": 1,
-      "object-curly-spacing": ["error", "always"],
-      "quotes": ["error", "single"],
+      "object-curly-spacing": [
+        "error",
+        "always"
+      ],
+      "quotes": [
+        "error",
+        "single"
+      ],
       "max-len": [
         "error",
         {
