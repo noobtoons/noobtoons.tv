@@ -1,7 +1,15 @@
-// @ts-ignore
-
-import React from "react";
-import {image0, image1, image10, image13, image3, image4, image7, image8, image9} from "./media";
+import React from 'react';
+import {
+  image0,
+  image1,
+  image10,
+  image13,
+  image3,
+  image4,
+  image7,
+  image8,
+  image9
+} from './media';
 
 export default function Carousel() {
   return (

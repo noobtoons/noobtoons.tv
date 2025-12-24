@@ -1,24 +1,24 @@
-import { emailJSKey } from "./vars/constantValues";
+import { emailJSKey } from './vars/constantValues';
 
 const mailer = async (e: any) => {
   // @ts-ignore
   const from_name =
-    (document.getElementById("name-content") as HTMLInputElement).value ||
-    "No Name";
+    (document.getElementById('name-content') as HTMLInputElement).value ||
+    'No Name';
   // @ts-ignore
-  const message = (document.getElementById("mail-content") as HTMLInputElement)
+  const message = (document.getElementById('mail-content') as HTMLInputElement)
     .value;
   try {
     e.preventDefault();
 
     if (message.length) {
       await window.emailjs.send(
-        "service_7sd5x5o",
-        "template_nibjan9",
+        'service_7sd5x5o',
+        'template_nibjan9',
         { from_name, message },
         emailJSKey
       );
-      alert("Message sent successfully!");
+      alert('Message sent successfully!');
       /*
       TODO
        from_name.length &&
@@ -29,10 +29,10 @@ const mailer = async (e: any) => {
        = "";
       */
     } else {
-      alert("Please Enter a message!");
+      alert('Please Enter a message!');
     }
   } catch (e) {
-    alert(e);
+    alert('Failed to send message, please try again later.');
     console.log(e);
   }
 };

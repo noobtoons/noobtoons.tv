@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
-import Mailer from "./mailer";
-import FilmRoll from "./filmRoll";
-import SEOKeys from "./SEOkeys";
-import Navigation from "./nav";
-import "./App.css";
+import React, { useEffect } from 'react';
+import Mailer from './mailer';
+import FilmRoll from './filmRoll';
+import SEOKeys from './SEOkeys';
+import Navigation from './nav';
+import './App.css';
 // import Carousel from "./carousel";
 import {
   bafta,
@@ -22,12 +22,12 @@ import {
   TwoK,
   womeninesports,
   youtube,
-} from "./media";
-import { emailJSKey } from "./vars/constantValues";
+} from './media';
+import { emailJSKey } from './vars/constantValues';
 
 function App() {
   useEffect(() => {
-    window.emailjs.init(emailJSKey);
+    window.emailjs && window.emailjs?.init(emailJSKey);
   });
 
   return (
@@ -52,7 +52,7 @@ function App() {
                 className="mail-icons"
                 src={mail}
                 alt="tiktok-link"
-              />{" "}
+              />{' '}
               hello@noobtoons.tv
             </a>
             <div>
@@ -134,7 +134,7 @@ function App() {
               </p>
               <p>
                 Although Noobtoons&apos; main audience is on Twitch, she
-                actively creates content for other{" "}
+                actively creates content for other{' '}
                 <a
                   target="_blank"
                   rel="noreferrer"
@@ -147,7 +147,7 @@ function App() {
                     src={target}
                     alt="linkedin-link"
                   />
-                </a>{" "}
+                </a>{' '}
                 and has a lot of growing following on a lot of the other social
                 medias which showcases what shes about.
               </p>
@@ -324,7 +324,7 @@ function App() {
               className="all-links-main"
               href="http://https://www.beacons.ai/noobtoons"
             >
-              {" "}
+              {' '}
               All Links
               <img
                 loading="lazy"
@@ -345,7 +345,7 @@ function App() {
                       data-unique-id="noobtoonstv"
                       data-embed-from="embed_page"
                       data-embed-type="creator"
-                      style={{maxWidth: '780px', minWidth: '288px'}}
+                      style={{ maxWidth: '780px', minWidth: '288px' }}
                       >
             <section>
               <a target="_blank"

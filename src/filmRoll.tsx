@@ -1,11 +1,21 @@
-import React, { useEffect, useRef } from "react";
-import { image12, image2, image6, image11, image9, image14, snow, image0, particle} from "./media";
+import React, { useEffect, useRef } from 'react';
+import {
+    image12,
+    image2,
+    image6,
+    image11,
+    image9,
+    image14,
+    snow,
+    image0,
+    particle
+} from './media';
 
 export default function FilmRoll() {
   const filmRollRef = useRef(null);
 
   useEffect(() => {
-    window.jQuery(".autoplay").not(".slick-initialized").slick({
+    window.jQuery('.autoplay').not('.slick-initialized').slick({
       slidesToShow: 5,
       slidesToScroll: 1,
       dots: true,

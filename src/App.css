@@ -321,10 +321,6 @@ form {
 }
 
 @media only screen and (max-width: 36em) {
-  .App-header {
-    /*background-size: contain !important;*/
-  }
-
   .name-title {
     font-size: 3em;
   }
