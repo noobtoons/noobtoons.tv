@@ -22,6 +22,9 @@ import {
   TwoK,
   womeninesports,
   youtube,
+  nintendo,
+  charlotteT,
+  godmode,
 } from './media';
 import { emailJSKey } from './vars/constantValues';
 
@@ -211,6 +214,24 @@ function App() {
               src={streamlabs}
               alt="noobtoons partnered with streamlabs for black history month"
             />
+            <img
+              loading="lazy"
+              className="icons-brands"
+              src={nintendo}
+              alt="noobtoons partnered with nintendo"
+            />
+            <img
+              loading="lazy"
+              className="icons-brands"
+              src={charlotteT}
+              alt="noobtoons partnered with charlotte tilbury"
+            />
+            <img
+              loading="lazy"
+              className="icons-brands"
+              src={godmode}
+              alt="noobtoons partnered with godmode beauty"
+            />
           </div>
 
           <div id="contact" className="sections">
@@ -244,7 +265,7 @@ function App() {
             </form>
           </div>
 
-          <div id="socials" className="sections footer">
+          <div id="socials" className="sections">
             <h2>Socials</h2>
             <a
               target="_blank"
@@ -322,7 +343,7 @@ function App() {
               target="_blank"
               rel="noreferrer"
               className="all-links-main"
-              href="http://https://www.beacons.ai/noobtoons"
+              href="https://www.beacons.ai/noobtoons"
             >
               {' '}
               All Links
@@ -334,11 +355,7 @@ function App() {
               />
             </a>
           </div>
-        </div>
-        <FilmRoll />
-      </div>
-
-      <div id="timelines" className="sections">
+          <div id="timelines" className="sections">
         <SEOKeys />
         <div className="tiktok">
           <blockquote className="tiktok-embed"
@@ -357,10 +374,13 @@ function App() {
           </blockquote>
         </div>
       </div>
-
-      <div id="showcase">
-        {/*<Carousel/>*/}
+        </div>
+        <FilmRoll />
       </div>
+
+      {/* <div id="showcase">
+        <Carousel/>
+      </div> */}
       <footer>
         <a
             className="mail mail-bottom"
