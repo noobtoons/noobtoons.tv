@@ -150,7 +150,7 @@ h2 {
 #film_roll {
   justify-content: center;
   display: inline-flex;
-  height: 92vh;
+  height: 140vmin;
   width: 15vw;
   overflow: hidden;
 }

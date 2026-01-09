@@ -7,7 +7,6 @@ import {
   image3,
   image4,
   image7,
-  image8,
   image9
 } from './media';
 
@@ -101,22 +100,6 @@ export default function Carousel() {
           </picture>
           <div className="carousel-caption d-md-block">
             <p className="caption">Bafta Games Awards 2022 - Nominee Party</p>
-          </div>
-        </div>
-        <div className="carousel-item">
-          <picture>
-            <source
-              srcSet={image8}
-              type="image/webp"
-            />
-          <img
-            className="d-block w-100"
-            src={image8}
-            alt="Eighth slide"
-          />
-          </picture>
-          <div className="carousel-caption d-md-block">
-            <p className="caption">Darling in the Franxx Cosplay</p>
           </div>
         </div>
         <div className="carousel-item">

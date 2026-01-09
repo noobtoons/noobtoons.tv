@@ -1,13 +1,18 @@
 import React, { useEffect, useRef } from 'react';
 import {
-    image12,
-    image2,
-    image6,
-    image11,
-    image9,
-    image14,
-    snow,
     image0,
+    image1,
+    image4,
+    image5,
+    image8,
+    image11,
+    image12,
+    image14,
+    image15,
+    image16,
+    image17,
+    image18,
+    image19,
     particle
 } from './media';
 
@@ -16,7 +21,7 @@ export default function FilmRoll() {
 
   useEffect(() => {
     window.jQuery('.autoplay').not('.slick-initialized').slick({
-      slidesToShow: 5,
+      slidesToShow: 14,
       slidesToScroll: 1,
       dots: true,
       focusOnSelect: true,
@@ -32,78 +37,78 @@ export default function FilmRoll() {
     <div id="film_roll" className="autoplay" ref={filmRollRef}>
       <picture>
         <source
-          srcSet={particle}
+          srcSet={image4}
           type="image/webp"
         />
       <img
         loading="lazy"
         className="d-block w-100"
-        src={particle}
+        src={image4}
         alt="Noobtoons birthday shoot 2023"
       />
       </picture>
 
       <picture>
         <source
-          srcSet={image2}
+          srcSet={image0}
           type="image/webp"
         />
       <img
         loading="lazy"
         className="d-block w-100"
-        src={image2}
+        src={image0}
         alt="Noobtoons in red hair"
       />
       </picture>
 
       <picture>
         <source
-          srcSet={image6}
+          srcSet={image5}
           type="image/webp"
         />
       <img
         loading="lazy"
         className="d-block w-100"
-        src={image6}
+        src={image5}
         alt="Noobtoons Pride makeup"
       />
       </picture>
 
       <picture>
         <source
-          srcSet={image12}
+          srcSet={image18}
           type="image/webp"
         />
       <img
         loading="lazy"
         className="d-block w-100"
-        src={image12}
+        src={image18}
         alt="Noobtoons Pride look"
       />
       </picture>
 
       <picture>
         <source
-          srcSet={image11}
+          srcSet={image1}
           type="image/webp"
         />
       <img
         loading="lazy"
         className="d-block w-100"
-        src={image11}
+        src={image1}
         alt="Noobtoons peace sign"
       />
       </picture>
 
       <picture>
         <source
-          srcSet={image9}
+          srcSet={image19}
           type="image/webp"
         />
       <img
         loading="lazy"
         className="d-block w-100"
-        src={image9}
+        src={image19}
         alt="Noobtoons Twitch and Tiktok Stream setup"
       />
       </picture>
@@ -123,26 +128,99 @@ export default function FilmRoll() {
 
       <picture>
         <source
-          srcSet={image0}
+          srcSet={image15}
           type="image/webp"
         />
       <img
         loading="lazy"
         className="d-block w-100"
-        src={image0}
+        src={image15}
         alt="Noobtoons at the Tate Morden"
       />
       </picture>
 
       <picture>
         <source
-          srcSet={snow}
+          srcSet={image16}
           type="image/webp"
         />
       <img
         loading="lazy"
         className="d-block w-100"
-        src={snow}
+        src={image16}
+        alt="Noobtoons dog Snow - Bichon Frise"
+      />
+      </picture>
+            <picture>
+        <source
+          srcSet={image11}
+          type="image/webp"
+        />
+      <img
+        loading="lazy"
+        className="d-block w-100"
+        src={image11}
+        alt="Noobtoons dog Snow - Bichon Frise"
+      />
+      </picture>
+
+      <picture>
+        <source
+          srcSet={image12}
+          type="image/webp"
+        />
+      <img
+        loading="lazy"
+        className="d-block w-100"
+        src={image12}
+        alt="Noobtoons dog Snow - Bichon Frise"
+      />
+      </picture>
+            <picture>
+        <source
+          srcSet={particle}
+          type="image/webp"
+        />
+      <img
+        loading="lazy"
+        className="d-block w-100"
+        src={particle}
+        alt="Noobtoons dog Snow - Bichon Frise"
+      />
+      </picture>
+            <picture>
+        <source
+          srcSet={image12}
+          type="image/webp"
+        />
+      <img
+        loading="lazy"
+        className="d-block w-100"
+        src={image12}
+        alt="Noobtoons dog Snow - Bichon Frise"
+      />
+      </picture>
+            <picture>
+        <source
+          srcSet={image17}
+          type="image/webp"
+        />
+      <img
+        loading="lazy"
+        className="d-block w-100"
+        src={image17}
+        alt="Noobtoons dog Snow - Bichon Frise"
+      />
+      </picture>
+                  <picture>
+        <source
+          srcSet={image8}
+          type="image/webp"
+        />
+      <img
+        loading="lazy"
+        className="d-block w-100"
+        src={image8}
         alt="Noobtoons dog Snow - Bichon Frise"
       />
       </picture>

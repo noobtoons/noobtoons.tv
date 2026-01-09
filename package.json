@@ -11,7 +11,7 @@
     "web-vitals": "^5.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "NODE_ENV=production node_modules/react-scripts/bin/react-scripts.js start",
     "build": "BUILD_PATH='./docs' react-scripts build && git add docs",
     "server": "serve -s docs",
     "test": "react-scripts test",
